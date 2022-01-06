@@ -66,7 +66,7 @@ git_prompt ()
 # search for LSCOLORS
 export LSCOLORS=ExGxFxdxCxDxDxaccxaeex
 # Force ls to use colors (G) and use humanized file sizes (h)
-alias ls='ls -Gh'
+alias ls='ls -GhCal'
 
 # Force grep to always use the color option and show line numbers
 export GREP_OPTIONS='--color=always'
