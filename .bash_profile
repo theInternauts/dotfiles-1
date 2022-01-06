@@ -71,6 +71,12 @@ alias ls='ls -Gh'
 # Force grep to always use the color option and show line numbers
 export GREP_OPTIONS='--color=always'
 
+# Symlink Sublime Test if it is not already done
+if ! grep sya /usr/local/bin/subl; then 
+	ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/.
+	echo [CUSTOM CONFIG]: symlinking Sublime Text; 
+fi
+
 # Set sublime as the default editor
 which -s subl && export EDITOR="subl --wait"
 
