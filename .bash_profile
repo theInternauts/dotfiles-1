@@ -72,8 +72,8 @@ alias ls='ls -GhCal'
 export GREP_OPTIONS='--color=always'
 
 # Symlink Sublime Test if it is not already done
-if ! grep sya /usr/local/bin/subl; then 
-	ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/.
+if grep sya /usr/local/bin/subl; then 
+	ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/.;
 	echo [CUSTOM CONFIG]: symlinking Sublime Text; 
 fi
 
